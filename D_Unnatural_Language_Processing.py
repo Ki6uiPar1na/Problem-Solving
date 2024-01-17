@@ -1,0 +1,6 @@
+from Crypto.Util.number import *
+e = 65537
+ct = 2202283806988360629601756293122117577310708688852970808036226607500778118170689404
+
+pt = (ct ^ e)
+print(long_to_bytes(pt).decode())
